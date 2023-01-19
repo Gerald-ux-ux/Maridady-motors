@@ -10,8 +10,8 @@ import ava03 from "../../assets/all-images/ava-8.jpg";
 
 const OUR__MEMBERS = [
   {
-    name: "Alfred Wit",
-    experience: "5 years of experience",
+    name: "Lisa Burnett",
+    experience: "5+ years of experience",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
@@ -20,8 +20,8 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Lisa Burnett",
-    experience: "5 years of experience",
+    name: "James Mwikali",
+    experience: "5+ years of experience",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
@@ -30,8 +30,8 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Hilton King",
-    experience: "5 years of experience",
+    name: "Gerald Cook",
+    experience: "5+ years of experience",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
