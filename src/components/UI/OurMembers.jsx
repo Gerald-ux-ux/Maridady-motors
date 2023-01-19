@@ -2,13 +2,15 @@ import React from "react";
 import "../../styles/our-member.css";
 import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import ava01 from "../../assets/all-images/ava-1.jpg";
-import ava02 from "../../assets/all-images/ava-2.jpg";
-import ava03 from "../../assets/all-images/ava-3.jpg";
+import ava01 from "../../assets/all-images/ava-6.jpg";
+import ava02 from "../../assets/all-images/ava-7.jpg";
+import ava03 from "../../assets/all-images/ava-8.jpg";
+
+
 
 const OUR__MEMBERS = [
   {
-    name: "Jhon Doe",
+    name: "Alfred Wit",
     experience: "5 years of experience",
     fbUrl: "#",
     instUrl: "#",
@@ -18,7 +20,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "David Lisa",
+    name: "Lisa Burnett",
     experience: "5 years of experience",
     fbUrl: "#",
     instUrl: "#",
@@ -35,16 +37,6 @@ const OUR__MEMBERS = [
     twitUrl: "#",
     linkedinUrl: "#",
     imgUrl: ava03,
-  },
-
-  {
-    name: "Jhon Doe",
-    experience: "5 years of experience",
-    fbUrl: "#",
-    instUrl: "#",
-    twitUrl: "#",
-    linkedinUrl: "#",
-    imgUrl: ava01,
   },
 ];
 
