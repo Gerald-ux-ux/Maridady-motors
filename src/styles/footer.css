@@ -1,5 +1,5 @@
 .footer {
-  background: #000d6b;
+  background: black;
   padding-top: 50px;
   padding-bottom: 15px;
 }
@@ -50,9 +50,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 8px 12px;
-  border: 1px solid #7c8a972f;
+  border: 1px solid white;
   border-radius: 50px;
-  background: #020a4de9;
+  background-color: black;
 }
 
 .newsletter input {
@@ -67,8 +67,30 @@
 }
 
 .footer__bottom {
-  border-top: 1px solid #7c8a972f;
+  border-top: 1px solid whitesmoke;
 }
+
+.section__description1 {
+  color: whitesmoke;
+}
+
+/* latest code update */
+
+.bottom1 {
+  position: absolute;
+  right: 180px;
+}
+
+.bottom {
+  position: absolute;
+  right: 45%;
+}
+.up{
+ position: relative;
+ right: 40px;
+}
+
+/* latest code update */
 
 @media only screen and (max-width: 768px) {
   .footer__logo-content {
@@ -89,6 +111,4 @@
   .footer__bottom p {
     font-size: 0.7rem;
   }
-
-  
 }
