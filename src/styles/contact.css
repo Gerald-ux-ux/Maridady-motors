@@ -1,15 +1,14 @@
 .social__link-icon {
   text-decoration: none;
-
-  color: rgb(14, 11, 11);
+  color:#1E1f26;
   font-weight: 500;
   font-size: 1.2rem;
 }
 
 .contact__btn {
   padding: 7px 15px;
-  background:  rgb(241, 142, 142);
-  color: #fff;
+  background:  #1E1f26;
+  color: #d0e1f9;
   border: none;
   outline: none;
   border-radius: 5px;

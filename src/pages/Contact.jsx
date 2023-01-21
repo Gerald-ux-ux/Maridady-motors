@@ -28,12 +28,12 @@ const socialLinks = [
 const Contact = () => {
   return (
     <Helmet title="Contact">
-      <CommonSection title="Contact" />
+      <CommonSection/>
       <section>
         <Container>
           <Row>
             <Col lg="7" md="7">
-              <h6 className="fw-bold mb-4">Get In Touch</h6>
+              <h6 className="fw-bold mb-2">Get In Touch</h6>
 
               <Form>
                 <FormGroup className="contact__form">

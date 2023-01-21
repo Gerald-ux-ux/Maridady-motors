@@ -11,7 +11,7 @@ const BookingForm = () => {
   return (
     <form>
       <div class="form-row  ">
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-3">
           <label for="inputEmail4">Email</label>
           <input
             type="email"
@@ -20,7 +20,7 @@ const BookingForm = () => {
             placeholder="Email"
           />
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-3">
           <label for="inputPassword4">Car</label>
           <input
             type="password"
@@ -30,7 +30,7 @@ const BookingForm = () => {
           />
         </div>
       </div>
-      <div class="form-group col-md-8">
+      <div class="form-group col-md-3">
         <label for="inputAddress">Address</label>
         <input
           type="text"
@@ -40,11 +40,11 @@ const BookingForm = () => {
         />
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-3">
           <label for="inputCity">City</label>
           <input type="text" class="form-control" id="inputCity" />
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-3">
           <label for="inputState">State</label>
           <select id="inputState" class="form-control">
             <option value="" disabled selected>
@@ -57,7 +57,7 @@ const BookingForm = () => {
             <option value="Kilifi">Machacos</option>
           </select>
         </div>
-        <div class="form-group col-md-2">
+        <div class="form-group col-md-3">
           <label for="inputZip">Zip</label>
           <input type="text" class="form-control" id="inputZip" />
         </div>
