@@ -2,6 +2,7 @@ import React from "react";
 
 import HeroSlider from "../components/UI/HeroSlider";
 import Helmet from "../components/Helmet/Helmet";
+import { Link } from "react-router-dom";
 
 import { Container, Row, Col } from "reactstrap";
 import FindCarForm from "../components/UI/FindCarForm";
@@ -22,16 +23,15 @@ const Home = () => {
         <HeroSlider />
 
         <div className="hero__form">
-          <Container>
+          <Container className="cont-1">
             <Row className="form__row">
               <Col lg="4" md="4">
                 <div className="find__cars-left">
                   <h2>Find your best car here</h2>
+                  <Link to="/cars">
+                    <button className="btn find__btn mt-4">Find a car</button>
+                  </Link>
                 </div>
-              </Col>
-
-              <Col lg="8" md="8" sm="12">
-                <FindCarForm />
               </Col>
             </Row>
           </Container>

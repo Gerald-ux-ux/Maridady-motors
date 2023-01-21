@@ -3,71 +3,71 @@ import "../../styles/booking-form.css";
 import { Form, FormGroup } from "reactstrap";
 
 const BookingForm = () => {
+
+
   const submitHandler = (event) => {
     event.preventDefault();
   };
   return (
-    <Form onSubmit={submitHandler}>
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="text" placeholder="First Name" />
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="Last Name" />
-      </FormGroup>
-
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="email" placeholder="Email" />
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="number" placeholder="Phone Number" />
-      </FormGroup>
-
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="text" placeholder="From Address" />
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <input type="text" placeholder="To Address" />
-      </FormGroup>
-
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <select name="" id="">
-          <option value="1 person">1 Person</option>
-          <option value="2 person">2 Person</option>
-          <option value="3 person">3 Person</option>
-          <option value="4 person">4 Person</option>
-          <option value="5+ person">5+ Person</option>
-        </select>
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
-        <select name="" id="">
-          <option value="1 luggage">1 luggage</option>
-          <option value="2 luggage">2 luggage</option>
-          <option value="3 luggage">3 luggage</option>
-          <option value="4 luggage">4 luggage</option>
-          <option value="5+ luggage">5+ luggage</option>
-        </select>
-      </FormGroup>
-
-      <FormGroup className="booking__form d-inline-block me-4 mb-4">
-        <input type="date" placeholder="Journey Date" />
-      </FormGroup>
-      <FormGroup className="booking__form d-inline-block ms-1 mb-4">
+    <form>
+      <div class="form-row  ">
+        <div class="form-group col-md-4">
+          <label for="inputEmail4">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputPassword4">Car</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword4"
+            placeholder="Car type"
+          />
+        </div>
+      </div>
+      <div class="form-group col-md-8">
+        <label for="inputAddress">Address</label>
         <input
-          type="time"
-          placeholder="Journey Time"
-          className="time__picker"
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="1234 Main St"
         />
-      </FormGroup>
-
-      <FormGroup>
-        <textarea
-          rows={5}
-          type="textarea"
-          className="textarea"
-          placeholder="Write"
-        ></textarea>
-      </FormGroup>
-    </Form>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option value="" disabled selected>
+              Choose...
+            </option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kilifi">Kilifi</option>
+            <option value="Kilifi">Embu</option>
+            <option value="Kilifi">Machacos</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+      </div>
+      <br />
+      <br />
+      <button type="submit" class="btn btn-light">
+        Reserve Now
+      </button>
+    </form>
   );
 };
 

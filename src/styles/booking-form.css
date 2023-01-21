@@ -30,6 +30,18 @@
   outline: none;
 }
 
+
+
+.form-row{
+  display: grid;
+}
+
+
+.btn-light{
+  background: #7c8a97 !important;
+  color:#7c8a97 ;
+}
+
 @media only screen and (max-width: 768px) {
   .booking__form {
     width: 100%;

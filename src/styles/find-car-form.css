@@ -1,6 +1,6 @@
 .find__cars-left {
   background: linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9)),
-    url("../assets/all-images/toyota-offer-2.png");
+    ;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,9 +56,10 @@
 
 .hero__form {
   position: absolute;
-  bottom: -150px;
+  bottom: -250px;
   z-index: 11;
   width: 100%;
+  white-space: nowrap;
 }
 
 .form__row {

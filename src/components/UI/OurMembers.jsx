@@ -4,7 +4,7 @@ import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import ava01 from "../../assets/all-images/ava-6.jpg";
 import ava02 from "../../assets/all-images/ava-7.jpg";
-import ava03 from "../../assets/all-images/ava-8.jpg";
+import ava03 from "../../assets/all-images/ava-9.jpg";
 
 
 
@@ -30,7 +30,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Gerald Cook",
+    name: "Abby kamau",
     experience: "5+ years of experience",
     fbUrl: "#",
     instUrl: "#",

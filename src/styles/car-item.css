@@ -1,33 +1,34 @@
 .car__item {
   border: 1px solid #7c8a9736;
-  padding: 20px;
+  padding: 25px;
   border-radius: 5px;
+  
 }
 
 .car__item-info span i {
-  color: #f9a826;
-  font-size: 1.1rem;
+  color: #1e1f26;
+  font-size: 1.0rem;
 }
 
 .car__item-btn {
   border-radius: 0;
   border: none;
   outline: none;
-  background: #000d6b;
+  background:  #1e1f26;
   padding: 8px 0px;
 }
 
 .car__item-btn a {
   text-decoration: none;
-  color: #fff;
+  color: #d0e1f9;
   font-weight: 500;
 }
 
 .car__item-btn a:hover {
-  color: #fff;
+  color: palevioletred;
 }
 .car__btn-details {
-  background: #f9a826;
+  background: #4D648D;
   border-radius: 0px 4px 4px 0px;
 }
 

@@ -22,7 +22,7 @@
 
 .header__top__help i {
   background: #fff;
-  color: #000d6b;
+  color: #1e1f26;
   padding: 2px 4px;
   border-radius: 50px;
   font-size: 0.7rem;
@@ -45,7 +45,7 @@
 }
 
 .logo h1 a span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .logo h1 a i {
@@ -54,7 +54,7 @@
 
 .logo h1 a {
   text-decoration: none;
-  color: #000d6b;
+  color: #1e1f26;
   font-weight: 700;
 }
 
@@ -62,27 +62,43 @@
   line-height: 1.5rem;
 }
 
+/* ================ added on=========== */
+
+.ri-car-fill {
+  color: #1e1f26;
+}
+
+
+
+.header__location-content {
+}
+
 .header__location span i {
   font-size: 2.2rem;
-  color: #000d6b;
+  color: #1e1f26;
+  margin-left: 10px;
 }
 
 .header__location-content h4 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #000d6b;
+  color: #1e1f26;
+  margin-left: 20px;
 }
 
 .header__location-content h6 {
   font-weight: 600;
+  margin-left: 20px;
 }
 
 .header__btn {
-  background: #000d6b !important;
+  background: #1e1f26 !important;
   padding: 10px 20px;
   border: none;
   outline: none;
   border-radius: 5px;
+  position: relative;
+  right: -50px; /* adjust the value as needed */
 }
 
 .header__btn a {
@@ -103,11 +119,11 @@
 
 .main__navbar {
   padding: 15px 0px;
-  background: #000d6b;
+  background: #1e1f26;
 }
 
 .mobile__menu i {
-  color: #fff;
+  color: black;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -133,20 +149,26 @@
 }
 
 .search__box {
-  border: 1px solid #7c8a972f;
+  border: 1px solid gray;
   padding: 7px 12px;
   display: flex;
   align-items: center;
   border-radius: 50px;
-  background: #020a4de9;
+  background: black;
 }
-
+.input-a {
+  background-color: black;
+  color: white;
+}
 .search__box input {
   background: transparent;
   border: none;
   outline: none;
   color: #fff;
   cursor: pointer;
+  z-index: 1;
+  max-height: 200px; /* adjust as needed */
+  overflow-y: auto; /* add scrollbar if needed */
 }
 
 .search__box input::placeholder {
@@ -154,6 +176,36 @@
 }
 .search__box span i {
   color: rgba(255, 255, 255, 0.555);
+  cursor: pointer;
+}
+
+.search__results {
+  position: absolute;
+  top: 40px; /* adjust as needed */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 200px; /* adjust as needed */
+  overflow-y: auto; /* add scrollbar if needed */
+  display: none; /* initially hide the dropdown */
+}
+
+/* show the dropdown when there are filtered cars */
+.search__box.show {
+  display: block;
+}
+
+.search__box li {
+  padding: 8px 10px; /* adjust as needed */
+  list-style: none; /* remove bullet points */
+}
+
+.search__box li:hover {
+  background-color: #f8f8f8; /* adjust as needed */
   cursor: pointer;
 }
 

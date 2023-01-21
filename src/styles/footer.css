@@ -1,21 +1,21 @@
 .footer {
-  background: black;
+  background: #1e1f26;
   padding-top: 50px;
   padding-bottom: 15px;
 }
 
 .footer__logo i {
-  color: #fff;
-  font-weight: 400;
+  color: #d0e1f9;
+  font-weight: 350;
 }
 
 .footer__logo span {
-  color: #fff;
+  color: #d0e1f9;
   font-weight: 500;
 }
 
 .footer__logo-content {
-  color: rgba(255, 255, 255, 0.715);
+  color: #d0e1f9;
   margin-top: 15px;
   line-height: 30px;
 }
@@ -26,22 +26,22 @@
 }
 
 .quick__link a {
-  color: rgba(255, 255, 255, 0.715);
+  color: #d0e1f9;
   text-decoration: none;
   font-weight: 300;
   transition: 0.3s;
 }
 
 .quick__link a:hover {
-  color: #f9a826;
+  color: palevioletred;
 }
 
 .footer__link-title {
-  color: #fff;
+  color: #d0e1f9;
 }
 
 .office__info {
-  color: rgba(255, 255, 255, 0.715);
+  color: #d0e1f9;
   font-weight: 300;
 }
 
@@ -67,16 +67,20 @@
 }
 
 .footer__bottom {
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid #d0e1f9;
+  margin-top: 20px;
 }
 
 .section__description1 {
-  color: whitesmoke;
+  color: #d0e1f9;
+}
+.text-container {
+  margin-top: 20px;
 }
 
 /* latest code update */
 
-.bottom1 {
+/* .bottom1 {
   position: absolute;
   right: 180px;
 }
@@ -87,8 +91,8 @@
 }
 .up{
  position: relative;
- right: 40px;
-}
+ right: 10px;
+} */
 
 /* latest code update */
 

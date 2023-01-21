@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
-
-import { Container, Row, Col } from "reactstrap";
+import { useState } from "react";
+import { Container, Row, Col, Dropdown } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
+import carData from "../../assets/data/carData";
 
 const navLinks = [
   {
@@ -30,40 +31,35 @@ const navLinks = [
 
 const Header = () => {
   const menuRef = useRef(null);
-
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+
+  const [filteredCars, setFilteredCars] = useState([]);
+
+  const handleSearch = (event) => {
+    let searchTerm = event.target.value;
+
+    const fitlered = carData.filter((car) =>
+      car.carName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredCars(fitlered);
+  };
+
+  console.log(carData);
+
+  function handleSelect(car) {
+    window.location.href = `/cars/${car.carName}`;
+  }
+
+  // const filteredCarData =
+  //   carData && carData.length
+  //     ? carData.filter((car) =>
+  //         car.name.toLowerCase().includes(searchTerm.toLowerCase())
+  //       )
+  //     : [];
 
   return (
     <header className="header">
-      {/* ============ header top ============ */}
-      <div className="header__top">
-        <Container>
-          <Row>
-            <Col lg="6" md="6" sm="6">
-              <div className="header__top__left">
-                <span>Need Help?</span>
-                <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +1-202-555-0149
-                </span>
-              </div>
-            </Col>
-
-            <Col lg="6" md="6" sm="6">
-              <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-                <Link to="#" className=" d-flex align-items-center gap-1">
-                  <i class="ri-login-circle-line"></i> Login
-                </Link>
-
-                <Link to="#" className=" d-flex align-items-center gap-1">
-                  <i class="ri-user-line"></i> Register
-                </Link>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-
-      {/* =============== header middle =========== */}
+      {/* =============== header top =========== */}
       <div className="header__middle">
         <Container>
           <Row>
@@ -71,10 +67,8 @@ const Header = () => {
               <div className="logo">
                 <h1>
                   <Link to="/home" className=" d-flex align-items-center gap-2">
-                    <i class="ri-car-line"></i>
-                    <span>
-                      Rent Car <br /> Service
-                    </span>
+                    <i class="ri-car-fill"></i>
+                    <span >Rental Car Service</span>
                   </Link>
                 </h1>
               </div>
@@ -86,8 +80,8 @@ const Header = () => {
                   <i class="ri-earth-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Bangladesh</h4>
-                  <h6>Sylhet City, Bangladesh</h6>
+                  <h4 className="Title">Kenya</h4>
+                  <h6 className="Title"> 1738 Kenya, Thika Rd, Nairobi</h6>
                 </div>
               </div>
             </Col>
@@ -98,8 +92,8 @@ const Header = () => {
                   <i class="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Sunday to Friday</h4>
-                  <h6>10am - 7pm</h6>
+                  <h4>Monday to Saturday</h4>
+                  <h6>9am - 5pm</h6>
                 </div>
               </div>
             </Col>
@@ -108,7 +102,7 @@ const Header = () => {
               lg="2"
               md="3"
               sm="0"
-              className=" d-flex align-items-center justify-content-end "
+              className="align-items-center justify-content-end "
             >
               <button className="header__btn btn ">
                 <Link to="/contact">
@@ -144,10 +138,26 @@ const Header = () => {
                 ))}
               </div>
             </div>
-
             <div className="nav__right">
-              <div className="search__box">
-                <input type="text" placeholder="Search" />
+              <div
+                className={`search__box ${filteredCars.length ? "show" : ""}`}
+              >
+                <input
+                  onChange={(e) => handleSearch(e)}
+                  className="input-a"
+                  type="text"
+                  placeholder="Search"
+                />
+                {filteredCars.filter((car) => car.carName === car.carName)
+                  .length ? (
+                  filteredCars.map((car) => (
+                    <li key={car.id} onClick={() => handleSelect(car)}>
+                      {car.carName}
+                    </li>
+                  ))
+                ) : (
+                  <p> No cars found</p>
+                )}
                 <span>
                   <i class="ri-search-line"></i>
                 </span>
