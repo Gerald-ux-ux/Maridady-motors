@@ -1,5 +1,5 @@
 .blog__publisher span i {
-  color: #f9a826;
+  color: #1E1f26;
 }
 
 blockquote {
@@ -10,18 +10,8 @@ blockquote {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid #000d6b;
+  border: 2px solid #D0E1F9 ;
   object-fit: cover;
-}
-
-.replay i {
-  color: #f9a826;
-}
-
-.replay {
-  color: #000d6b;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .leave__comment-form input,
@@ -34,13 +24,13 @@ blockquote {
 }
 
 .comment__btn {
-  background: #000d6b !important;
-  color: #fff !important;
+  background: #1E1f26 !important;
+  color: #D0E1F9 !important;
 }
 
 .recent__blog-item h6 a {
   text-decoration: none;
-  color: #000d6b;
+  color: #1E1f26;
   font-weight: 600;
 }
 

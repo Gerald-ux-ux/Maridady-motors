@@ -26,7 +26,7 @@ const handleSortChange = (e) => {
 
   return (
     <Helmet title="Cars">
-      <CommonSection title="Car Listing" />
+      <CommonSection title="" />
 
       <section>
         <Container>

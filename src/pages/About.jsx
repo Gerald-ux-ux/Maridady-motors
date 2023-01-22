@@ -6,7 +6,7 @@ import AboutSection from "../components/UI/AboutSection";
 import { Container, Row, Col } from "reactstrap";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 
-import driveImg from "../assets/all-images/drive.jpg";
+import driveImg from "../assets/all-images/blackman.jpg";
 import OurMembers from "../components/UI/OurMembers";
 import "../styles/about.css";
 
@@ -38,13 +38,6 @@ const About = () => {
                   tempore rem minima adipisci magni dolorum ipsam.
                 </p>
 
-                <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
-                </p>
-
                 <div className=" d-flex align-items-center gap-3 mt-4">
                   <span className="fs-4">
                     <i class="ri-phone-line"></i>
@@ -67,7 +60,6 @@ const About = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
-              <h6 className="section__subtitle">Experts</h6>
               <h2 className="section__title">Our Members</h2>
             </Col>
             <OurMembers />

@@ -29,7 +29,9 @@ const Home = () => {
                 <div className="find__cars-left">
                   <h2>Find your best car here</h2>
                   <Link to="/cars">
-                    <button className="btn find__btn mt-4">Find a car</button>
+                    <button className="btn comment__btn mt-3 mb-2">
+                      Find a car
+                    </button>
                   </Link>
                 </div>
               </Col>
@@ -44,7 +46,6 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
-              <h6 className="section__subtitle">See our</h6>
               <h2 className="section__title">Popular Services</h2>
             </Col>
 
@@ -57,11 +58,11 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center mb-5">
-              <h6 className="section__subtitle">Come with</h6>
+              <h6 className="section__subtitle">Comes with</h6>
               <h2 className="section__title">Hot Offers</h2>
             </Col>
 
-            {carData.slice(0, 6).map((item) => (
+            {carData.slice(0, 3).map((item) => (
               <CarItem item={item} key={item.id} />
             ))}
           </Row>
@@ -75,7 +76,6 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-4 text-center">
-              <h6 className="section__subtitle">Our clients says</h6>
               <h2 className="section__title">Testimonials</h2>
             </Col>
 
@@ -89,10 +89,8 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
-              <h6 className="section__subtitle">Explore our blogs</h6>
               <h2 className="section__title">Latest Blogs</h2>
             </Col>
-
             <BlogList />
           </Row>
         </Container>

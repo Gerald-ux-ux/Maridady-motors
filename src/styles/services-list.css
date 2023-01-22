@@ -1,6 +1,6 @@
 .service__item span i {
   font-size: 2.5rem;
-  color: #f9a826;
+  color: #1E1f26;
 }
 
 .service__item h6 {
@@ -10,7 +10,8 @@
 }
 
 .service__item h6:hover {
-  color: #f9a826;
+  color: palevioletred;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {

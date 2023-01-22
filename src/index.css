@@ -66,8 +66,8 @@ section {
 
 .btn {
   padding: 7px 15px;
-  background: #1e1f26;
-  color: #1e1f26;
+  background: #1E1f26;
+  color: #1E1f26;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -76,18 +76,28 @@ section {
 
 .btn:hover {
   color: palevioletred !important;
-  background: #000c6bd0;
+  background: #1E1f26;
+}
+
+
+.link-call{
+  color:#1E1f26;
+
+}
+
+.link-call:hover{
+  color: palevioletred;
 }
 
 /* NEW CODE */
 
 .ri-phone-line {
-  color: #1e1f26;
+  color: #1E1f26;
 }
 
 .find__btn {
-  background: #1e1f26 !important;
-  color: #d0e1f9 !important;
+  background: #1E1f26 !important;
+  color: #D0E1F9 !important;
   border: none;
   outline: none;
   position: absolute;

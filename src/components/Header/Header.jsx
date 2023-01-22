@@ -68,7 +68,7 @@ const Header = () => {
                 <h1>
                   <Link to="/home" className=" d-flex align-items-center gap-2">
                     <i class="ri-car-fill"></i>
-                    <span >Rental Car Service</span>
+                    <span>Rental Car Service</span>
                   </Link>
                 </h1>
               </div>
@@ -87,7 +87,7 @@ const Header = () => {
             </Col>
 
             <Col lg="3" md="3" sm="4">
-              <div className="header__location d-flex align-items-center gap-2">
+              <div className="header__location d-flex align-items-center gap-2 ">
                 <span>
                   <i class="ri-time-line"></i>
                 </span>
@@ -104,11 +104,10 @@ const Header = () => {
               sm="0"
               className="align-items-center justify-content-end "
             >
-              <button className="header__btn btn ">
-                <Link to="/contact">
-                  <i class="ri-phone-line"></i> Request a call
-                </Link>
-              </button>
+              <i class="ri-phone-line"></i>
+              <Link to="/contact" className="link-call">
+                Request a call
+              </Link>
             </Col>
           </Row>
         </Container>

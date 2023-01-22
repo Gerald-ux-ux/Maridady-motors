@@ -1,6 +1,7 @@
 .common__section {
   background: linear-gradient(rgba(80, 82, 83, 0.5), rgba(80, 82, 83, 0.5)),
     url("../assets/all-images/drive.jpg");
+      filter: grayscale(25%);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

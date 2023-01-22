@@ -1,13 +1,7 @@
 import React from "react";
 import "../../styles/booking-form.css";
-import { Form, FormGroup } from "reactstrap";
 
 const BookingForm = () => {
-
-
-  const submitHandler = (event) => {
-    event.preventDefault();
-  };
   return (
     <form>
       <div class="form-row  ">
@@ -18,16 +12,12 @@ const BookingForm = () => {
             class="form-control"
             id="inputEmail4"
             placeholder="Email"
+            required
           />
         </div>
         <div class="form-group col-md-3">
           <label for="inputPassword4">Car</label>
-          <input
-            type="password"
-            class="form-control"
-            id="inputPassword4"
-            placeholder="Car type"
-          />
+          <input type="car" class="form-control" placeholder="Car type" />
         </div>
       </div>
       <div class="form-group col-md-3">
@@ -64,9 +54,7 @@ const BookingForm = () => {
       </div>
       <br />
       <br />
-      <button type="submit" class="btn btn-light">
-        Reserve Now
-      </button>
+      <button className="btn comment__btn mt-3 mb-2">Reserve now</button>
     </form>
   );
 };
