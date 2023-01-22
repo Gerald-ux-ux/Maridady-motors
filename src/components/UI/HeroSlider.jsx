@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "../../styles/hero-slider.css";
 
 const HeroSlider = () => {
+  
   const settings = {
     fade: true,
     speed: 2000,

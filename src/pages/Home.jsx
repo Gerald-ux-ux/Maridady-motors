@@ -29,7 +29,7 @@ const Home = () => {
                 <div className="find__cars-left">
                   <h2>Find your best car here</h2>
                   <Link to="/cars">
-                    <button className="btn comment__btn mt-3 mb-2">
+                    <button className="btn comment__btn mt-2 mb-2">
                       Find a car
                     </button>
                   </Link>
@@ -89,6 +89,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-5 text-center">
+
               <h2 className="section__title">Latest Blogs</h2>
             </Col>
             <BlogList />

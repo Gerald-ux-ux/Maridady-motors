@@ -13,7 +13,7 @@ import "../styles/about.css";
 const About = () => {
   return (
     <Helmet title="About">
-      <CommonSection  />
+      <CommonSection />
       <AboutSection aboutClass="aboutPage" />
 
       <section className="about__page-section">
@@ -44,7 +44,9 @@ const About = () => {
                   </span>
 
                   <div>
-                    <h6 className="section__subtitle">Need Any Help? Contact us </h6>
+                    <h6 className="section__subtitle">
+                      Need Any Help? Contact us{" "}
+                    </h6>
                     <h4>+245 702278510</h4>
                   </div>
                 </div>

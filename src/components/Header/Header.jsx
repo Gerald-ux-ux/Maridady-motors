@@ -145,21 +145,17 @@ const Header = () => {
                   onChange={(e) => handleSearch(e)}
                   className="input-a"
                   type="text"
-                  placeholder="Search"
+                  placeholder="Find a car"
                 />
-                {filteredCars.filter((car) => car.carName === car.carName)
-                  .length ? (
-                  filteredCars.map((car) => (
-                    <li key={car.id} onClick={() => handleSelect(car)}>
-                      {car.carName}
-                    </li>
-                  ))
-                ) : (
-                  <p> No cars found</p>
-                )}
+
                 <span>
                   <i class="ri-search-line"></i>
                 </span>
+                {filteredCars.slice(0, 3).map((car) => (
+                  <li key={car.id} onClick={() => handleSelect(car)}>
+                    {car.carName}
+                  </li>
+                ))}
               </div>
             </div>
           </div>

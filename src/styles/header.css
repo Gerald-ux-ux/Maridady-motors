@@ -1,6 +1,6 @@
 .header__top {
   padding: 10px 0px;
-  background: #000d6b;
+  background: #1e1f26;
   color: #fff;
 }
 
@@ -68,11 +68,6 @@
   color: #1e1f26;
 }
 
-
-
-.header__location-content {
-}
-
 .header__location span i {
   font-size: 2.2rem;
   color: #1e1f26;
@@ -123,13 +118,14 @@
 }
 
 .mobile__menu i {
-  color: black;
+  color: #d0e1f9;
   font-size: 1.3rem;
   cursor: pointer;
 }
 
 .mobile__menu {
   display: none;
+  background: #1E1f26;
 }
 
 .menu {
@@ -145,16 +141,16 @@
 }
 
 .nav__item:hover {
-  color: #f9a826;
+  color: #d0e1f9;
 }
 
 .search__box {
-  border: 1px solid gray;
+  border: 1px solid #d0e1f9;
   padding: 7px 12px;
-  display: flex;
   align-items: center;
-  border-radius: 50px;
-  background: black;
+  border-radius: 7px;
+  background: #1E1f26;
+  color: #d0e1f9;
 }
 .input-a {
   background-color: black;
@@ -164,11 +160,7 @@
   background: transparent;
   border: none;
   outline: none;
-  color: #fff;
-  cursor: pointer;
-  z-index: 1;
-  max-height: 200px; /* adjust as needed */
-  overflow-y: auto; /* add scrollbar if needed */
+  color: #d0e1f9;
 }
 
 .search__box input::placeholder {
@@ -179,21 +171,6 @@
   cursor: pointer;
 }
 
-.search__results {
-  position: absolute;
-  top: 40px; /* adjust as needed */
-  left: 0;
-  width: 100%;
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  max-height: 200px; /* adjust as needed */
-  overflow-y: auto; /* add scrollbar if needed */
-  display: none; /* initially hide the dropdown */
-}
-
 /* show the dropdown when there are filtered cars */
 .search__box.show {
   display: block;
@@ -201,16 +178,16 @@
 
 .search__box li {
   padding: 8px 10px; /* adjust as needed */
-  list-style: none; /* remove bullet points */
+  list-style: circle; /* remove bullet points */
 }
 
 .search__box li:hover {
-  background-color: #f8f8f8; /* adjust as needed */
+  background-color: palevioletred;
   cursor: pointer;
 }
 
 .nav__active {
-  color: #f9a826;
+  color: palevioletred;
 }
 
 @media only screen and (max-width: 768px) {
