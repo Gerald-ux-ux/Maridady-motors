@@ -190,6 +190,8 @@
   color: palevioletred;
 }
 
+
+
 @media only screen and (max-width: 768px) {
   .header__top,
   .header__middle,

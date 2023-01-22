@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import { Container, Row, Col, Dropdown } from "reactstrap";
+import { Container, Row, Col} from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
 import carData from "../../assets/data/carData";
