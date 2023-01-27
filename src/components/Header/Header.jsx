@@ -75,10 +75,10 @@ const Header = () => {
             </Col>
 
             <Col lg="3" md="3" sm="4">
-              <div className="header__location d-flex align-items-center gap-2">
-                <span>
+              <div className="header__location d-flex align-items-center gap-1">
+       
                   <i class="ri-earth-line"></i>
-                </span>
+           
                 <div className="header__location-content">
                   <h4 className="Title">Kenya</h4>
                   <h6 className="Title"> 1738 Kenya, Thika Rd, Nairobi</h6>
@@ -87,10 +87,10 @@ const Header = () => {
             </Col>
 
             <Col lg="3" md="3" sm="4">
-              <div className="header__location d-flex align-items-center gap-2 ">
-                <span>
+              <div className="header__location d-flex align-items-center gap-1 ">
+
                   <i class="ri-time-line"></i>
-                </span>
+         
                 <div className="header__location-content">
                   <h4>Monday to Saturday</h4>
                   <h6>9am - 5pm</h6>

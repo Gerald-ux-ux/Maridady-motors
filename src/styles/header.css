@@ -196,7 +196,7 @@
   .header__top,
   .header__middle,
   .nav__right {
-    display: none;
+    display: flex;
   }
 
   .mobile__menu {
@@ -224,6 +224,7 @@
     row-gap: 2rem;
     justify-content: center;
   }
+  
 
   .menu a {
     color: #000d6b;
