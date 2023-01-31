@@ -196,7 +196,7 @@
   .header__top,
   .header__middle,
   .nav__right {
-    display: flex;
+    display: none;
   }
 
   .mobile__menu {
